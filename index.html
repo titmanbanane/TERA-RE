@@ -3,373 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERA Real Estate</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>TERA RE | Conseil Immobilier Haut de Gamme</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Luxe -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">TERA</a>
-            <div class="nav-links">
-                <a href="#about">À Propos</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#pricing">Honoraires</a>
-                <a href="#contact" class="cta-link">Contact</a>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo-img">
+            <img src="assets/tera-re-logo.png" alt="logo tera re">
+        </div>
+        <div class="container header-container">
+            <a href="#" class="logo">TERA <span>RE</span></a>
+            
+            <nav>
+                <ul>
+                    <li class="active"><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#services">Prestations</a></li>
+                    <li><a href="#portfolio">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="language-switcher">
+                <a href="#" class="active">FR</a>
+                <a href="#">EN</a>
+                <a href="#">ES</a>
             </div>
+            
             <div class="mobile-menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
+                <i class="fas fa-bars"></i>
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section Luxe -->
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Luxury property" class="hero-img">
-        <div class="hero-content">
-            <h1>Investissement Immobilier <span>Haut de Gamme</span></h1>
-            <p class="subtitle">Conseil personnalisé pour clients internationaux</p>
-            <a href="#contact" class="cta-button">Prendre rendez-vous</a>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Portrait professionnel">
-                    <div class="experience-badge">
-                        <span>10+</span>
-                        <small>ans d'expérience</small>
-                    </div>
+            <div class="hero-content">
+                <h1>Conseil Immobilier d'Exception</h1>
+                <p>TERA RE accompagne une clientèle exigeante dans l'acquisition de biens prestigieux en Île-de-France et sa province.</p>
+                <a href="#contact" class="btn">Prendre rendez-vous</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>À Propos de TERA RE</h2>
+                <p>Une approche sur-mesure pour des projets immobiliers d'exception</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Votre expert immobilier haut de gamme</h3>
+                    <p>Fondée par des professionnels du secteur immobilier de luxe, TERA RE se distingue par son approche personnalisée et son expertise juridique et financière pointue.</p>
+                    <p>Nous accompagnons principalement les non-résidents à la recherche d'un pied-à-terre d'exception ou des clients souhaitant déléguer entièrement la gestion de leur projet immobilier.</p>
+                    <p>Notre cabinet intervient également dans les successions complexes et les montages juridiques sophistiqués (usufruit, nue-propriété, SCI familiale).</p>
+                    <p class="signature">Marie Lambert, Fondatrice</p>
                 </div>
-                <div class="about-content">
-                    <h2 class="section-title">Expertise Immobilière <span>Sur Mesure</span></h2>
-                    <p class="lead">Je m'appelle [Prénom Nom], spécialiste en immobilier haut de gamme pour clients internationaux depuis plus de 10 ans.</p>
-                    <p>Mon approche allie connaissance approfondie du marché français et compréhension des besoins spécifiques des investisseurs non-résidents. J'accompagne une clientèle exigeante dans l'acquisition de biens d'exception à Paris, sur la Côte d'Azur et dans les Alpes.</p>
-                    <div class="signature">
-                        <img src="https://i.imgur.com/JQ9pSdA.png" alt="Signature">
-                    </div>
-                    <div class="awards">
-                        <div class="award-item">
-                            <i class="fas fa-trophy"></i>
-                            <span>Prix de l'Excellence Immobilière 2022</span>
-                        </div>
-                        <div class="award-item">
-                            <i class="fas fa-medal"></i>
-                            <span>Membre du Circle of Excellence</span>
-                        </div>
-                    </div>
+                
+                <div class="about-image">
+                    <img src="assets/IMG_0060.jpg" alt="image of an paris osmanian building">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section">
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Services <span>Exclusifs</span></h2>
-            <p class="section-subtitle">Un accompagnement complet et discret</p>
+            <div class="section-title">
+                <h2>Nos Prestations</h2>
+                <p>Un accompagnement complet de A à Z pour votre projet immobilier</p>
+            </div>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search-location"></i>
-                    </div>
-                    <h3>Recherche sur Mesure</h3>
-                    <p>Identification de biens exclusifs souvent non listés sur les marchés publics</p>
-                    <ul>
-                        <li>Analyse de 30+ critères</li>
-                        <li>Visites virtuelles HD</li>
-                        <li>Rapport d'expertise</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card highlighted">
-                    <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Négociation Discrète</h3>
-                    <p>Stratégies de négociation adaptées aux transactions haut de gamme</p>
-                    <ul>
-                        <li>Étude de marché précise</li>
-                        <li>Gestion des enchères</li>
-                        <li>Protocole de confidentialité</li>
-                    </ul>
+                    <i class="fas fa-search-dollar"></i>
+                    <h3>Conseil en Acquisition</h3>
+                    <p>Identification des meilleures opportunités, analyse de marché approfondie et stratégie de négociation sur-mesure.</p>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-file-contract"></i>
-                    </div>
-                    <h3>Gestion Administrative</h3>
-                    <p>Prise en charge complète des formalités non-résidents</p>
-                    <ul>
-                        <li>Optimisation fiscale</li>
-                        <li>Coordination notariale</li>
-                        <li>Suivi bancaire</li>
-                    </ul>
+                    <i class="fas fa-balance-scale"></i>
+                    <h3>Expertise Juridique</h3>
+                    <p>Audit complet des dossiers, montages juridiques complexes et sécurisation des transactions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-euro-sign"></i>
+                    <h3>Ingénierie Financière</h3>
+                    <p>Optimisation fiscale, mise en relation avec des banques privées et montage de dossiers complexes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Gestion de Patrimoine</h3>
+                    <p>Stratégie patrimoniale globale incluant gestion locative haut de gamme et optimisation successorale.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-pencil-ruler"></i>
+                    <h3>Étude & Suivi de Travaux</h3>
+                    <p>Coordination avec architectes et artisans d'art pour des rénovations d'exception.</p>
+                </div>
+                
+                <div class="service-card">
+                    <i class="fas fa-chess"></i>
+                    <h3>Stratégie Successorale</h3>
+                    <p>Gestion des indivisions complexes et prévention des contentieux familiaux.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">Portfolio <span>Sélectif</span></h2>
-            <p class="section-subtitle">Quelques réalisations récentes</p>
+            <div class="section-title">
+                <h2>Nos Réalisations</h2>
+                <p>Une sélection de nos derniers projets immobiliers</p>
+            </div>
             
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projet Paris">
+                    <img src="assets/rel1.jpg" alt="Appartement Paris 7ème">
                     <div class="portfolio-overlay">
-                        <h3>Hôtel Particulier Paris 7ème</h3>
-                        <p>750m² - 12M€</p>
-                        <a href="#" class="view-more">Voir détails <i class="fas fa-arrow-right"></i></a>
+                        <h3>Appartement 1</h3>
+                        <p>Acquisition pour client international</p>
                     </div>
                 </div>
                 
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projet Côte d'Azur">
+                    <img src="assets/rel2.jpg" alt="Villa Saint-Tropez">
                     <div class="portfolio-overlay">
-                        <h3>Villa Saint-Jean-Cap-Ferrat</h3>
-                        <p>1200m² - 28M€</p>
-                        <a href="#" class="view-more">Voir détails <i class="fas fa-arrow-right"></i></a>
+                        <h3>Appartement 2</h3>
+                        <p>Montage en SCI familiale</p>
                     </div>
                 </div>
                 
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Projet Courchevel">
+                    <img src="assets/rel3.jpg" alt="Loft New York">
                     <div class="portfolio-overlay">
-                        <h3>Chalet Courchevel 1850</h3>
-                        <p>800m² - 15M€</p>
-                        <a href="#" class="view-more">Voir détails <i class="fas fa-arrow-right"></i></a>
+                        <h3>Appartement 3</h3>
+                        <p>Investissement locatif</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="portfolio-stats">
-                <div class="stat-item">
-                    <span class="stat-number">120M€+</span>
-                    <span class="stat-label">Volume transacté</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">28</span>
-                    <span class="stat-label">Clients internationaux</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Satisfaction client</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing-section">
-        <div class="container">
-            <h2 class="section-title">Honoraires <span>Transparents</span></h2>
-            <p class="section-subtitle">Des formules adaptées à chaque projet</p>
-            
-            <div class="pricing-tabs">
-                <button class="pricing-tab active" data-tab="acquisition">Acquisition</button>
-                <button class="pricing-tab" data-tab="consulting">Consulting</button>
-                <button class="pricing-tab" data-tab="management">Management</button>
-            </div>
-            
-            <div class="pricing-content active" id="acquisition">
-                <div class="pricing-card">
-                    <h3>Service Complet</h3>
-                    <div class="price">3% du prix d'acquisition</div>
-                    <ul>
-                        <li>Recherche sur mesure</li>
-                        <li>Négociation experte</li>
-                        <li>Coordination juridique</li>
-                        <li>Optimisation fiscale</li>
-                        <li>Suivi 12 mois inclus</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">En savoir plus</a>
-                </div>
-            </div>
-            
-            <div class="pricing-content" id="consulting">
-                <div class="pricing-card">
-                    <h3>Forfait Consulting</h3>
-                    <div class="price">À partir de 5,000€ HT</div>
-                    <ul>
-                        <li>Audit de projet</li>
-                        <li>Étude de marché</li>
-                        <li>Recommandations stratégiques</li>
-                        <li>Rapport détaillé</li>
-                        <li>Validité 3 mois</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">En savoir plus</a>
-                </div>
-            </div>
-            
-            <div class="pricing-content" id="management">
-                <div class="pricing-card">
-                    <h3>Gestion Patrimoniale</h3>
-                    <div class="price">1.5% annuel</div>
-                    <ul>
-                        <li>Supervision des travaux</li>
-                        <li>Gestion locative premium</li>
-                        <li>Reporting trimestriel</li>
-                        <li>Optimisation continue</li>
-                        <li>Accès réseau privilégié</li>
-                    </ul>
-                    <a href="#contact" class="cta-button">En savoir plus</a>
+                
+                <div class="portfolio-item">
+                    <img src="assets/rel4.jpg" alt="Château Bordeaux">
+                    <div class="portfolio-overlay">
+                        <h3>Appartement 4</h3>
+                        <p>Succession complexe</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Témoignages <span>Clients</span></h2>
-            <p class="section-subtitle">Ce que disent nos clients internationaux</p>
+            <div class="section-title">
+                <h2>Témoignages</h2>
+                <p>Ce que nos clients disent de nous</p>
+            </div>
             
-            <div class="testimonials-slider">
-                <div class="testimonial-card">
-                    <div class="client-info">
-                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client">
-                        <div class="client-details">
-                            <h4>Sophia Al-Maktoum</h4>
-                            <p>Investisseuse, Dubaï</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam consequatur soluta dolores placeat labore commodi in? Cum recusandae atque nesciunt ut ex odio.</p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="client-info">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
-                        <div class="client-details">
-                            <h4>James Wellington</h4>
-                            <p>CEO, Londres</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestias quisquam ipsum blanditiis fugit error aliquid tempore dolorem fugiat a. Magni necessitatibus nam illo nisi.</p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-card">
-                    <div class="client-info">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
-                        <div class="client-details">
-                            <h4>Tom paire</h4>
-                            <p>CEO, Paris</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, quibusdam id exercitationem quam ipsam maxime distinctio harum magnam, ex eos neque voluptate.</p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus molestiae consequuntur veritatis optio maiores quae quibusdam ut atque blanditiis. Ullam aspernatur aliquid ipsa? Quibusdam sunt, quos recusandae vel iste accusamus.<p>
+                    <p class="testimonial-author">— client 1., Client depuis ----</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="contact-grid">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <p>Préparons ensemble votre projet immobilier</p>
+            </div>
+            
+            <div class="contact-container">
                 <div class="contact-info">
-                    <h2 class="section-title">Contact <span>Privilégié</span></h2>
-                    <p class="contact-subtitle">Un accompagnement commence toujours par une conversation</p>
+                    <h3>Nos Coordonnées</h3>
                     
-                    <div class="contact-method">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Téléphone</h4>
-                            <p>+33 6 12 34 56 78</p>
-                        </div>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 12 Avenue Montaigne, 75008 Paris</p>
+                        <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                        <p><i class="fas fa-envelope"></i> contact@tera-re.com</p>
+                        <p><i class="fas fa-clock"></i> Lun-Ven: 9h-19h | Sur rendez-vous</p>
                     </div>
                     
-                    <div class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>contact@terarealestate.com</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-method">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Bureau Paris</h4>
-                            <p>23 Avenue temp, 75008 Paris</p>
-                        </div>
-                    </div>
-                    
+                    <h3>Suivez-nous</h3>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <form>
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Nom complet*" required>
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" required>
                         </div>
+                        
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Email*" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
                         </div>
+                        
                         <div class="form-group">
-                            <input type="tel" id="phone" placeholder="Téléphone">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone">
                         </div>
+                        
                         <div class="form-group">
-                            <select id="subject" required>
-                                <option value="" disabled selected>Sujet de votre demande*</option>
-                                <option value="acquisition">Acquisition immobilière</option>
-                                <option value="consulting">Consulting stratégique</option>
-                                <option value="management">Gestion patrimoniale</option>
-                                <option value="other">Autre demande</option>
-                            </select>
+                            <label for="message">Votre message</label>
+                            <textarea id="message" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Votre message*" required></textarea>
-                        </div>
-                        <button type="submit" class="cta-button">Envoyer <i class="fas fa-paper-plane"></i></button>
+                        
+                        <button type="submit" class="btn">Envoyer</button>
                     </form>
                 </div>
             </div>
@@ -377,42 +241,92 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>TERA</h3>
-                    <p>Conseil Immobilier</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="#about">À Propos</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#pricing">Honoraires</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>23 Avenue temp</p>
-                    <p>75008 Paris, France</p>
-                    <p>contact@terarealestate.com</p>
-                </div>
+            <div class="footer-logo">TERA <span>RE</span></div>
+            
+            <div class="footer-links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#services">Prestations</a>
+                <a href="#portfolio">Réalisations</a>
+                <a href="#contact">Contact</a>
+                <a href="#">Mentions légales</a>
             </div>
             
-            <div class="footer-bottom">
-                <p>&copy; 2025 TERA Real Estate. Tous droits réservés.</p>
-                <div class="legal-links">
-                    <a href="#">Mentions légales</a>
-                    <a href="#">Politique de confidentialité</a>
-                </div>
+            <div class="copyright">
+                &copy; 2023 TERA REAL ESTATE. Tous droits réservés.
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('nav');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    nav.style.display = 'none';
+                }
+            });
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav ul li');
+        
+        window.addEventListener('scroll', function() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 300) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(li => {
+                li.classList.remove('active');
+                if (li.querySelector('a').getAttribute('href') === '#' + current) {
+                    li.classList.add('active');
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre message. Nous vous contacterons sous peu.');
+            this.reset();
+        });
+
+        // Language switcher
+        document.querySelectorAll('.language-switcher a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector('.language-switcher a.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
 </html>
