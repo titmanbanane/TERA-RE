@@ -107,8 +107,8 @@
             justify-content: center;
             align-items: center;
             img {
-            max-width: 30vw;
-            max-height: 10vh;
+            max-width: 25vw;
+            max-height: 8vh;
             transition: all 0.3s ease;
             }
         }
