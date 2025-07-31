@@ -44,9 +44,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Conseil Immobilier d'Exception</h1>
+                <h1><strong>Conseil Immobilier d'Exception</strong></h1>
                 <p>TERA RE accompagne une clientèle exigeante dans l'acquisition de biens prestigieux en Île-de-France et sa province.</p>
-                <a href="#contact" class="btn">Prendre rendez-vous</a>
+                <a href="#contact" class="btn">Prendre rende    z-vous</a>
             </div>
         </div>
     </section>
@@ -55,7 +55,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
-                <h2>À Propos de TERA RE</h2>
+                <h2><strong>À Propos de TERA RE</strong></h2>
                 <p>Une approche sur-mesure pour des projets immobiliers d'exception</p>
             </div>
             
@@ -79,7 +79,7 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-title">
-                <h2>Nos Prestations</h2>
+                <h2><strong>Nos Prestations</strong></h2>
                 <p>Un accompagnement complet de A à Z pour votre projet immobilier</p>
             </div>
             
@@ -124,54 +124,72 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nos Réalisations</h2>
-                <p>Une sélection de nos derniers projets immobiliers</p>
+   <section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="section-title">
+            <h2><strong>Nos Réalisations</strong></h2>
+            <p>Une sélection de nos derniers projets immobiliers</p>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item" onclick="openModal('PROJET LERICHE')">
+                <img src="assets/PROJET LERICHE/IMG_0497.jpg" alt="Projet Leriche">
+                <div class="portfolio-overlay">
+                    <h3>Projet Leriche</h3>
+                    <p>Acquisition pour client international</p>
+                </div>
             </div>
             
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/rel1.jpg" alt="Appartement Paris 7ème">
-                    <div class="portfolio-overlay">
-                        <h3>Appartement 1</h3>
-                        <p>Acquisition pour client international</p>
-                    </div>
+            <div class="portfolio-item" onclick="openModal('PROJET PAUL BERT')">
+                <img src="assets/PROJET PAUL BERT/IMG_0577.jpg" alt="Projet Paul Bert">
+                <div class="portfolio-overlay">
+                    <h3>Projet Paul Bert</h3>
+                    <p>Montage en SCI familiale</p>
                 </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/rel2.jpg" alt="Villa Saint-Tropez">
-                    <div class="portfolio-overlay">
-                        <h3>Appartement 2</h3>
-                        <p>Montage en SCI familiale</p>
-                    </div>
+            </div>
+            
+            <div class="portfolio-item" onclick="openModal('PROJET POTEAU')">
+                <img src="assets/PROJET POTEAU/rel1.jpg" alt="Projet Poteau">
+                <div class="portfolio-overlay">
+                    <h3>Projet Poteau</h3>
+                    <p>Investissement locatif</p>
                 </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/rel3.jpg" alt="Loft New York">
-                    <div class="portfolio-overlay">
-                        <h3>Appartement 3</h3>
-                        <p>Investissement locatif</p>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/rel4.jpg" alt="Château Bordeaux">
-                    <div class="portfolio-overlay">
-                        <h3>Appartement 4</h3>
-                        <p>Succession complexe</p>
-                    </div>
+            </div>
+            
+            <div class="portfolio-item" onclick="openModal('PROJET VAUVENARGUE')">
+                <img src="assets/PROJET VAUVENARGUE/066fc271-2d9a-401c-9100-ef2354f97d41.JPG" alt="Projet Vauvenargue">
+                <div class="portfolio-overlay">
+                    <h3>Projet Vauvenargue</h3>
+                    <p>Succession complexe</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="portfolioModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        
+        <div class="modal-gallery">
+            <!-- Images will be inserted here by JavaScript -->
+        </div>
+        
+        <div class="modal-details">
+            <h3>Détails du projet</h3>
+            <p id="projectDetails"></p>
+        </div>
+    </div>
+</div>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
             <div class="section-title">
-                <h2>Témoignages</h2>
+                <h2><strong>Témoignages</strong></h2>
                 <p>Ce que nos clients disent de nous</p>
             </div>
             
@@ -188,7 +206,7 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Contact</h2>
+                <h2><strong>Contact</strong></h2>
                 <p>Préparons ensemble votre projet immobilier</p>
             </div>
             
@@ -261,72 +279,94 @@
     </footer>
 
     <script>
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
+    // Portfolio Modal Functionality
+    const projectData = {
+        'PROJET LERICHE': {
+            description: 'Acquisition pour client international',
+            details: 'Ce projet a consisté en l\'acquisition et la rénovation complète d\'un appartement haussmannien pour un client international recherchant un pied-à-terre parisien. Notre intervention a couvert la recherche du bien, la négociation, le montage juridique et le suivi des travaux.',
+            images: [
+                'IMG_0497.jpg',
+                'IMG_0504.jpg',
+                'IMG_0505.jpg',
+                'IMG_0507.jpg',
+                'IMG_0508.jpg',
+                'IMG_0511.jpg',
+                'IMG_0515.jpg'
+            ]
+        },
+        'PROJET PAUL BERT': {
+            description: 'Montage en SCI familiale',
+            details: 'Création d\'une SCI familiale pour l\'acquisition d\'un immeuble de rapport dans le 11ème arrondissement. Notre cabinet a géré l\'ensemble du processus incluant la structuration juridique, l\'optimisation fiscale et la gestion locative.',
+            images: [
+                '7ED6188E-DFD8-4CAD-BF44-2F4E0C4DA4FC.jpg',
+                'IMG_0577.jpg',
+                'IMG_0578.jpg',
+                'IMG_0579.jpg',
+                'IMG_0580.jpg'
+            ]
+        },
+        'PROJET POTEAU': {
+            description: 'Investissement locatif',
+            details: 'Acquisition et transformation d\'un ancien commercial en loft d\'exception destiné à la location saisonnière haut de gamme. TERA RE a coordonné l\'ensemble du projet depuis la recherche du bien jusqu\'à la mise en location.',
+            images: [
+                'rel1.jpg',
+                'rel2.jpg',
+                'rel3.jpg',
+                'rel4.jpg'
+            ]
+        },
+        'PROJET VAUVENARGUE': {
+            description: 'Succession complexe',
+            details: 'Gestion d\'une succession internationale avec des biens immobiliers en France, Espagne et Royaume-Uni. Notre intervention a permis de régler les questions fiscales et juridiques complexes tout en préservant l\'harmonie familiale.',
+            images: [
+                '066fc271-2d9a-401c-9100-ef2354f97d41.JPG',
+                '4289b7be-e038-4ce3-9011-0aac4002d8dc.jpg',
+                '51411f14-0a36-4af1-abea-1c8c0dc5288c.jpg',
+                '5a99bcf5-2ffb-4ad2-bb04-8038d5a1c8f5.jpg',
+                'd1f642c2-233e-4a85-b899-a1805f1618cb.JPG'
+            ]
+        }
+    };
 
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const nav = document.querySelector('nav');
+    function openModal(projectName) {
+        const modal = document.getElementById('portfolioModal');
+        const project = projectData[projectName];
         
-        mobileMenuBtn.addEventListener('click', function() {
-            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth <= 768) {
-                    nav.style.display = 'none';
-                }
-            });
-        });
-
-        // Active nav link on scroll
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('nav ul li');
+        document.getElementById('modalTitle').textContent = projectName;
+        document.getElementById('modalDescription').textContent = project.description;
+        document.getElementById('projectDetails').textContent = project.details;
         
-        window.addEventListener('scroll', function() {
-            let current = '';
+        const gallery = document.querySelector('.modal-gallery');
+        gallery.innerHTML = '';
+        
+        project.images.forEach(image => {
+            const imgContainer = document.createElement('div');
+            imgContainer.className = 'modal-image';
             
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= sectionTop - 300) {
-                    current = section.getAttribute('id');
-                }
-            });
+            const img = document.createElement('img');
+            img.src = `assets/${projectName}/${image}`;
+            img.alt = `${projectName} - ${image}`;
             
-            navLinks.forEach(li => {
-                li.classList.remove('active');
-                if (li.querySelector('a').getAttribute('href') === '#' + current) {
-                    li.classList.add('active');
-                }
-            });
+            imgContainer.appendChild(img);
+            gallery.appendChild(imgContainer);
         });
+        
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message. Nous vous contacterons sous peu.');
-            this.reset();
-        });
+    function closeModal() {
+        document.getElementById('portfolioModal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
 
-        // Language switcher
-        document.querySelectorAll('.language-switcher a').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector('.language-switcher a.active').classList.remove('active');
-                this.classList.add('active');
-            });
-        });
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        const modal = document.getElementById('portfolioModal');
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
     </script>
 </body>
 </html>
